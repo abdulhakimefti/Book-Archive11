@@ -8,7 +8,7 @@ const searchBook = () => {
     searchField.value = '';
     // Give input field value to API
     //Time to  call API
-    const url = `http://openlibrary.org/search.json?q=${searchText}`
+    const url = `https://openlibrary.org/search.json?q=${searchText}`
     fetch(url)
     .then(res => res.json())
     .then(data => displaySearchResult(data.docs))
